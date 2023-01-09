@@ -1,0 +1,49 @@
+Initialize a new Git repository
+>git init
+
+Configure global settings for the name and email address to be used when committing in this Git repository:
+>git config --global user.name "John Doe"
+>git config --global user.email "john.doe@contoso.com"
+
+configure a proxy in your global git config
+>git config --global http.proxy http://proxyUsername:proxyPassword@proxy.server.com:port
+
+List branches
+git branch --list
+
+Create new branch
+>git branch feature_branch_name
+
+Point to the branch
+>git checkout feature_branch_name
+
+See changes in the pointed branch
+> git status
+
+Stage/Add files
+>git add .
+
+Commit changes
+> git commit -m "comment"
+
+Create a pull request
+>git push //pushing branch to remote will create a pull request that admin can merge into main
+
+Merge changes from branch to the main
+>git checkout main //point to the main branch
+>git pull //make sure main is sync with remote origin
+>git merge feature_branch_name
+
+Delete branch
+>git branch --delete feature_branch_name
+
+View commit history
+>git log -v
+
+Investigate actual changes in the commit
+>git log -p
+
+To back out changes
+> git reset --hard <commit-id-5d2441f0be4f1e4ca1f8f83b56dee31251367adc>
+
+
