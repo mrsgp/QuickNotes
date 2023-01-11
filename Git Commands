@@ -1,3 +1,6 @@
+Configure credential in Windows
+>git config --global credential.helper wincred
+
 Initialize a new Git repository
 >git init
 
