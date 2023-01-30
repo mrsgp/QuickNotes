@@ -5,3 +5,6 @@ Scaffold-DbContext "Data Source=server;User Id=userid;Password=pws;Initial Catal
 
 Entity Framework Core CLI commands
 https://www.entityframeworktutorial.net/efcore/cli-commands-for-ef-core-migration.aspx
+
+EF CLi command using spcific environment
+>dotnet ef migrations list -- --environment SGP_DEV
